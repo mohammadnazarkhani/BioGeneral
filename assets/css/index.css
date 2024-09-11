@@ -1,9 +1,14 @@
 @import url(root.css);
 
+/* start initial settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -12,32 +17,30 @@ body {
     background-color: var(--bg-color);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+/* end initial settings */
 
-header {
+/* Top nav bar style rules */
+header.nav-bar {
     background: var(--header-color);
     color: var(--header-text-color);
     border-bottom: #ccc 1px solid;
     display: flex;
     align-content: space-between;
     text-align: center;
-    height: 2rem;
+    height: 10vh;
+    min-height: 30px;
 }
 
-header .nav-btn {
+header.nav-bar .nav-btn {
     color: #ccc;
-    font-size: 11pt;
-    margin-left: 0;
+    font-size: 0.75rem;
     text-decoration: none;
-    padding: 10px;
+    padding-left: 2vw;
+    margin-top: auto;
     transition: color 0.5s ease, text-decoration 0.5s ease, filter 0.5s ease;
 }
 
-header .nav-btn:hover {
+header.nav-bar .nav-btn:hover {
     color: #fff;
     filter: brightness(1.5);
 }
@@ -51,9 +54,9 @@ header .nav-btn:hover {
     border-radius: 5px;
     margin-top: auto;
     margin-bottom: auto;
-    height: 80%;
-    text-align: center;
     transition: filter 0.3s ease-in;
+    font-size: 0.75rem;
+    margin-right: 1vw;
 }
 
 .login-btn:hover {
@@ -65,11 +68,28 @@ header .nav-btn:hover {
     background-color: #ccc;
 }
 
-header h1 {
+header.nav-bar h1 {
     margin: 0;
-    font-size: 16pt;
+    font-size: 1.5rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Move above btn */
+#moveAbove {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+}
+
+
+
+/* TO Do: must be moved from this file style rules below */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .content {
@@ -115,6 +135,7 @@ article.bio-card {
 article.bio-card>img {
     width: 5em;
     height: 5em;
+    border-radius: 3px;
 }
 
 article.bio-card:hover {
@@ -124,11 +145,4 @@ article.bio-card:hover {
 article.bio-card>h1.bio-title {
     font-size: .8em;
     text-align: center;
-}
-
-#moveAbove {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 50px;
 }
