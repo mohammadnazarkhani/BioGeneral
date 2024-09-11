@@ -44,6 +44,18 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Release Notes
+
+### [1.0.0] - 2024-09-05
+- Initial release featuring a biography page dedicated to Taylor Swift.
+
+### [1.1.0] - 2024-09-10
+- Introduced a Home page showcasing biography cards for various celebrities.
+- Users can now navigate easily to individual biography pages from the Home page.
+
+### [1.1.1] - 2024-09-11
+- Refactored the layout to use relative units for the top header, improving responsiveness and consistency across different screen sizes.
+
 ### Notes:
 - Replace `https://github.com/yourusername/BioGeneral.git` with the actual URL of your GitHub repository.
 - Ensure that you have a `LICENSE` file if you mention licensing; otherwise, you can remove or modify that section.
