@@ -1,0 +1,31 @@
+/* Home page's biography cards style rules */
+main.bio-list {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+article.bio-card {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30vw;
+}
+
+article.bio-card>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 3px;
+}
+
+article.bio-card:hover {
+    cursor: pointer;
+}
+
+article.bio-card>h1.bio-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
