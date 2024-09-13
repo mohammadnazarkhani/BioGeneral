@@ -28,12 +28,12 @@ header.nav-bar {
     align-content: space-between;
     text-align: center;
     height: 10vh;
-    min-height: 30px;
+    min-height: 50px;
 }
 
 header.nav-bar .nav-btn {
     color: #ccc;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     text-decoration: none;
     padding-left: 2vw;
     margin-top: auto;
@@ -55,7 +55,7 @@ header.nav-bar .nav-btn:hover {
     margin-top: auto;
     margin-bottom: auto;
     transition: filter 0.3s ease-in;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     margin-right: 1vw;
 }
 
@@ -69,18 +69,17 @@ header.nav-bar .nav-btn:hover {
 }
 
 header.nav-bar h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 2.2rem;
+    margin: auto;
 }
 
 /* Move above btn */
 #moveAbove {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
-    width: 30px;
+    bottom: 1vh;
+    right: 1vw;
+    width: 10vw;
+    max-width: 70px;
 }
 
 
