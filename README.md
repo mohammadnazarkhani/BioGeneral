@@ -13,6 +13,7 @@
     - [\[1.1.0\] - 2024-09-10](#110---2024-09-10)
     - [\[1.1.1\] - 2024-09-11](#111---2024-09-11)
     - [\[1.1.3\] - 2024-09-13](#113---2024-09-13)
+    - [\[2.0.0\] - 2024-09-17](#200---2024-09-17)
     - [Notes:](#notes)
 
 # BioGeneral
@@ -32,13 +33,14 @@
 
 The project is organized as follows:
 
-- **`index.html`**: The main entry point of the application, containing the home page with biography cards.
-- **`assets/`**: Contains all static assets including CSS, JavaScript, and images.
+- **`public/`**: Contains all static assets including CSS, JavaScript, and images.
   - **`css/`**: Stylesheets for the application.
   - **`img/`**: Image assets, with folders named after each view for organization.
   - **`js/`**: JavaScript files for adding interactivity and functionality.
   - **`views/`**: Contains additional HTML pages for individual celebrity biographies.
     - **`[celebrity_name]/`**: Folder named after each view, containing images and other assets specific to that biography.
+    - **`index.html`**: Containing the home page with biography cards.
+  - **`index.js`**: The main entry point of the application.
 
 ## Getting Started
 
@@ -52,7 +54,17 @@ To run the application locally:
 2. **Navigate to the project directory:**
    ```bash
    cd BioGeneral
-3. **Open `index.html` in your web browser.**
+   
+3. **Install the packages:**
+   ```bash
+   npm install
+
+4. **Run application:**
+   ```bash
+   npm start
+6. **Open the home page in your browser:**
+   
+   Nvigate to `http://localhost/3000` url in your browser
 
 ## Future Improvements
 - Expand the collection of celebrity biographies.
@@ -87,6 +99,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
    - choose of better taylor swift image.
    - fixing the bug of not applying `scroll-text` animation when window is resized to small width.
    - added `Table of content` and `Screenshot` section in README.md file.
+
+### [2.0.0] - 2024-09-17
+- Addition of back-end side with node js and express framework technologies.
+- Configure the peges links and repositioning to adapt to the new directory structure.
+- Package: use of `nodemon` as the project's start script runner.
 
 ### Notes:
 - Replace `https://github.com/yourusername/BioGeneral.git` with the actual URL of your GitHub repository.
