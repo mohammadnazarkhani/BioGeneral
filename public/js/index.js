@@ -23,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const titleElement = bioCardElem.querySelector(".bio-title");
         let titleText = titleElement.innerText;
         titleText = titleText.toLowerCase().replace(/ /g, '-');
-        const bioPageUrl = `/assets/views/${titleText}.html`;
+        const bioPageUrl = `/views/${titleText}.html`;
         return bioPageUrl;
     }
+
 
     /**
      * Opens the specified URL in the same window.
