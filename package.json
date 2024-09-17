@@ -1,0 +1,20 @@
+{
+  "name": "biogeneral",
+  "version": "2.0.0",
+  "description": "Realease of v2 with back-end side with node js & express technologies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "website",
+    "node",
+    "js"
+  ],
+  "author": "Mohammad Nazarkhani",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
