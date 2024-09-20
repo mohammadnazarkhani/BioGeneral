@@ -1,6 +1,8 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'rul';
+// Import middlewarees
+import errorHandler from './middleware/error.js';
 // Routes
 
 const PORT = process.env.PORT;
@@ -28,6 +30,8 @@ app.use((err, req, res, next) => {
   res.status(500).send('Ops! Something broke!');
 });
 
+// Error handler middlewares
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`App listening at http://localhost:${PORT}`);
