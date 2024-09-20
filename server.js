@@ -1,10 +1,11 @@
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'rul';
+import { fileURLToPath } from 'url';
 // Import middlewarees
 import errorHandler from './middleware/error.js';
 import notFound from './middleware/notFound.js';
-// Routes
+// Import Routes
+import homeRoute from './routes/homeRoute.js';
 
 const PORT = process.env.PORT;
 
@@ -24,6 +25,9 @@ app.use(express.urlencoded({ extended: false }));
 
 // Setup static folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Routes
+app.use('/', homeRoute);
 
 // Error handler middlewares
 app.use(notFound);
