@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'rul';
 // Import middlewarees
 import errorHandler from './middleware/error.js';
+import notFound from './middleware/notFound.js';
 // Routes
 
 const PORT = process.env.PORT;
@@ -24,13 +25,8 @@ app.use(express.urlencoded({ extended: false }));
 // Setup static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Ops! Something broke!');
-});
-
 // Error handler middlewares
+app.use(notFound);
 app.use(errorHandler);
 
 app.listen(PORT, () => {
