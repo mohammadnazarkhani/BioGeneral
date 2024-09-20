@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "description": "Realease of v2 with back-end side with node js & express technologies.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "test",
-    "start": "nodemon index.js"
+    "start": "nodemon --env-file=.env server.js"
   },
   "keywords": [
     "website",

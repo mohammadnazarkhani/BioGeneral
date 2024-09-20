@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -12,8 +12,8 @@ const navRoutes = require('./routes/navRoutes');
 // Use routes
 app.use('/', navRoutes);
 
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`App listening at http://localhost:${PORT}`);
 });
 
 app.use((err, req, res, newxt) => {
