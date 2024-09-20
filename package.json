@@ -15,6 +15,7 @@
   "author": "Mohammad Nazarkhani",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
     "nodemon": "^3.1.4"
   }
