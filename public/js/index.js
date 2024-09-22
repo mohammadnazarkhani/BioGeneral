@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const titleElement = bioCardElem.querySelector(".bio-title");
         let titleText = titleElement.innerText;
         titleText = titleText.toLowerCase().replace(/ /g, '-');
-        const bioPageUrl = `https:localhost:5000/${titleText}`;
+        const bioPageUrl = `biography/${titleText}`;
         return bioPageUrl;
     }
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
      * @param {string} url - The URL to open.
      */
     const fetchPage = (url) => {
-        fetch(url);
+        window.location.href = url;
     }
 
     /**
