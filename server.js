@@ -7,6 +7,7 @@ import notFound from './middleware/notFound.js';
 // Import Routes
 import homeRoute from './routes/homeRoute.js';
 import bioRoute from './routes/bioRoute.js';
+import registrationRoute from './routes/registrationRoute.js';
 
 const PORT = process.env.PORT;
 
@@ -29,7 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/', homeRoute);
-app.use('/biography', bioRoute)
+app.use('/biography', bioRoute);
+app.use('/registration', registrationRoute);
 
 // Error handler middlewares
 app.use(notFound);
