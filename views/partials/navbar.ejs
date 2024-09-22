@@ -1,4 +1,5 @@
 <style>
+    @import url(../../public/css/index.css);
     /* Top nav bar style rules */
     header.nav-bar {
         position: sticky;
@@ -57,12 +58,11 @@
     }
 </style>
 <!-- Top header of website -->
-<% const PORT=process.env.PORT; const domain=`http://localhost:${PORT}/`; %>
-    <header class="nav-bar">
-        <h1>BioGeneral</h1>
-        <ul id="navbar-list">
-            <a class="nav-btn" href="<%= domain %>">Home</a>
-            <a href="<%= domain %>about" class="nav-btn">About</a>
-            <a href="<%= domain %>login" class="login-btn">Login</a>
-        </ul>
-    </header>
+<header class="nav-bar">
+    <h1>BioGeneral</h1>
+    <ul id="navbar-list">
+        <a class="nav-btn" href="/">Home</a>
+        <a href="/about" class="nav-btn">About</a>
+        <a href="/login" class="login-btn">Login</a>
+    </ul>
+</header>
