@@ -24,7 +24,7 @@ article.bio-card {
     gap: 20px;
     background-color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 50px;
     overflow: hidden;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     transition: box-shadow 0.3s ease;
@@ -41,7 +41,7 @@ article.bio-card>img {
     justify-self: flex-start;
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 
