@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     const navigateToBioPage = (bioCardElem) => {
         const bioPageUrl = constructBioPageUrl(bioCardElem);
-        openPage(bioPageUrl);
+        fetchPage(bioPageUrl);
     }
 
     /**
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const titleElement = bioCardElem.querySelector(".bio-title");
         let titleText = titleElement.innerText;
         titleText = titleText.toLowerCase().replace(/ /g, '-');
-        const bioPageUrl = `/views/${titleText}.html`;
+        const bioPageUrl = `https:localhost:5000/${titleText}`;
         return bioPageUrl;
     }
 
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
      * Opens the specified URL in the same window.
      * @param {string} url - The URL to open.
      */
-    const openPage = (url) => {
-        window.open(url, "_self");
+    const fetchPage = (url) => {
+        fetch(url);
     }
 
     /**

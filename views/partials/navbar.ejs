@@ -1,0 +1,68 @@
+<style>
+    /* Top nav bar style rules */
+    header.nav-bar {
+        position: sticky;
+        top: 0;
+        background: var(--header-color);
+        color: var(--header-text-color);
+        border-bottom: #ccc 1px solid;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        grid-area: navbar;
+        padding: 0 5px;
+    }
+
+    header.nav-bar h1 {
+        font-size: 2.2rem;
+    }
+
+    ul#navbar-list {
+        align-self: center;
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+    }
+
+    header.nav-bar .nav-btn {
+        color: #ccc;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: color 0.3s ease, text-decoration 0.5s ease, filter 0.5s ease;
+    }
+
+    header.nav-bar .nav-btn:hover {
+        color: #fff;
+        filter: brightness(1.5);
+    }
+
+    /* Login button styles */
+    .login-btn {
+        text-decoration: none;
+        color: white;
+        background-color: hsl(263, 55%, 52%);
+        padding: 0 5px;
+        border-radius: 10px;
+        transition: filter 0.3s ease-in;
+        font-size: 1.2rem;
+    }
+
+    .login-btn:hover {
+        filter: brightness(1.3);
+    }
+
+    .login-btn:active {
+        color: var(--header-color);
+        background-color: #ccc;
+    }
+</style>
+<!-- Top header of website -->
+<% const PORT=process.env.PORT; const domain=`http://localhost:${PORT}/`; %>
+    <header class="nav-bar">
+        <h1>BioGeneral</h1>
+        <ul id="navbar-list">
+            <a class="nav-btn" href="<%= domain %>">Home</a>
+            <a href="<%= domain %>about" class="nav-btn">About</a>
+            <a href="<%= domain %>login" class="login-btn">Login</a>
+        </ul>
+    </header>

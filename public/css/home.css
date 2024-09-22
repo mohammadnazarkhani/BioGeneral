@@ -1,43 +1,54 @@
 /* Home page's biography cards style rules */
+@media screen and (min-width:480px) {
+    main.bio-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width:480px) {
+    main.bio-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 main.bio-list {
     background-color: var(--bg-color);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-article.bio-card {
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 30vw;
-    overflow: hidden;
+    gap: 30px;
     margin: 10px;
 }
 
-article.bio-card * {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+article.bio-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: box-shadow 0.3s ease;
+    background: hsl(263, 55%, 90%);
 
-article.bio-card>img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 3px;
 }
 
 article.bio-card:hover {
     cursor: pointer;
+    box-shadow: rgba(17, 12, 46, 0.5) 0px 48px 100px 0px;
 }
+
+article.bio-card>img {
+    justify-self: flex-start;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
 
 
 article.bio-card>h1.bio-title {
     /* this is necessary to align text to center 
     after un-applying text-scroll animation */
-    margin: auto;
     font-size: 1.2rem;
     white-space: nowrap;
     text-align: center;
