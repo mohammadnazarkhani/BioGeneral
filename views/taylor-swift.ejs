@@ -6,53 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Swift Biography</title>
     <link rel="stylesheet" href="/../css/index.css">
+    <link rel="stylesheet" href="/../css/contentPage.css">
 </head>
 
 <body>
     <!-- Top header of website -->
     <%- include('./partials/navbar.ejs') %>
-        <div class="container">
-            <div class="content">
-                <div class="image">
+        <main class="content">
+            <header>
+                <h1>Taylor Swift</h1>
+                <hr id="underline-title">
+                <div class="image-container">
                     <img src="/../img/taylor-swift/taylor-swift.png" alt="Taylor Swift">
                 </div>
-                <h2>Early Life</h2>
-                <p>Taylor Alison Swift was born on December 13, 1989, in Reading, Pennsylvania. She grew up on a
-                    Christmas
-                    tree farm and began showing an interest in music at an early age. By the age of 10, she was already
-                    performing at local events and festivals.</p>
-
-                <h2>Career Beginnings</h2>
-                <p>Swift moved to Nashville, Tennessee, at the age of 14 to pursue a career in country music. She signed
-                    a
-                    music publishing deal with Sony/ATV, becoming the youngest signing in the company's history. In
-                    2006,
-                    she released her debut self-titled album, which was met with critical acclaim and commercial
-                    success.
-                </p>
-
-                <h2>Breakthrough and Success</h2>
-                <p>With her second album, "Fearless," released in 2008, Swift achieved mainstream success. The album
-                    featured hit singles like "Love Story" and "You Belong with Me," and it earned her several Grammy
-                    Awards. Over the years, Swift has continued to evolve her music style, incorporating pop, rock, and
-                    indie elements into her albums.</p>
-
-                <h2>Recent Work</h2>
-                <p>In recent years, Taylor Swift has continued to release successful albums, including "1989,"
-                    "Reputation,"
-                    "Lover," "Folklore," "Evermore," and "Midnights." She is known for her songwriting skills, personal
-                    lyrics, and impactful music videos. Swift's influence extends beyond music, as she has been a
-                    prominent
-                    advocate for various social and political issues.</p>
-
-                <h2>Personal Life</h2>
-                <p>Taylor Swift is also known for her philanthropy and activism. She has supported numerous charitable
-                    causes, including education, disaster relief, and LGBTQ+ rights. Swift has been recognized for her
-                    contributions to music and her positive influence on popular culture.</p>
+            </header>
+            <div class="image">
             </div>
-        </div>
-        <!-- Below is a button for moving page to top. -->
-        <%- include('./partials/moveAboveBtn.ejs') %>
+            <h2>Early Life</h2>
+            <p>Taylor Alison Swift was born on December 13, 1989, in Reading, Pennsylvania. She grew up on a
+                Christmas
+                tree farm and began showing an interest in music at an early age. By the age of 10, she was already
+                performing at local events and festivals.</p>
+
+            <h2>Career Beginnings</h2>
+            <p>Swift moved to Nashville, Tennessee, at the age of 14 to pursue a career in country music. She signed
+                a
+                music publishing deal with Sony/ATV, becoming the youngest signing in the company's history. In
+                2006,
+                she released her debut self-titled album, which was met with critical acclaim and commercial
+                success.
+            </p>
+
+            <h2>Breakthrough and Success</h2>
+            <p>With her second album, "Fearless," released in 2008, Swift achieved mainstream success. The album
+                featured hit singles like "Love Story" and "You Belong with Me," and it earned her several Grammy
+                Awards. Over the years, Swift has continued to evolve her music style, incorporating pop, rock, and
+                indie elements into her albums.</p>
+
+            <h2>Recent Work</h2>
+            <p>In recent years, Taylor Swift has continued to release successful albums, including "1989,"
+                "Reputation,"
+                "Lover," "Folklore," "Evermore," and "Midnights." She is known for her songwriting skills, personal
+                lyrics, and impactful music videos. Swift's influence extends beyond music, as she has been a
+                prominent
+                advocate for various social and political issues.</p>
+
+            <h2>Personal Life</h2>
+            <p>Taylor Swift is also known for her philanthropy and activism. She has supported numerous charitable
+                causes, including education, disaster relief, and LGBTQ+ rights. Swift has been recognized for her
+                contributions to music and her positive influence on popular culture.</p>
+            </div>
+        </main>
+
+        <!-- Fotter section of webste contains contact us section and etc... -->
+        <%- include('./partials/footer.ejs') %>
+
+            <!-- Below is a button for moving page to top. -->
+            <%- include('./partials/moveAboveBtn.ejs') %>
 </body>
 
 </html>
