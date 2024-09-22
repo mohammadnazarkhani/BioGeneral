@@ -6,18 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioGeneral - About</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contentPage.css">
 </head>
 
 <body>
     <!-- Top header of website -->
     <%- include('./partials/navbar.ejs') %>
-        <main>
-            
+        <main class="content">
+            <h1>About Us</h1>
+            <p>
+                At <strong>BioGeneral</strong>, we are dedicated to bringing the stories of famous personalities to life
+                through engaging biographies.
+                Our web application showcases a diverse collection of biographies, offering users an interactive
+                experience to explore the lives and
+                achievements of influential individuals. Whether you're a fan of pop culture icons like Taylor Swift or
+                historic figures,
+                BioGeneral provides a seamless way to discover detailed, curated biographies.
+            </p>
+            <p>
+                With continuous improvements and new features, we aim to expand our collection and enhance the user
+                experience,
+                keeping you connected to the most inspiring stories of our time. We're passionate about what we do, and
+                welcome contributions from our community
+                to make this platform even better.
+            </p>
+
+            <h3>Contact Us</h3>
+            <p>
+                For inquiries, feedback, or contributions, feel free to reach out:
+                <br>📧 Email: <a href="mailto:m.nazarkhani1380@gmail.com">m.nazarkhani1380@gmail.com</a>
+                <br>💻 GitHub: <a href="https://github.com/mohammadnazarkhani" target="_blank">mohammadnazarkhani</a>
+            </p>
+
+            <!-- Copyright Section -->
+            <footer>
+                <h2>Licence</h2>
+                <p>Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
+                <p>
+                    Developed by <a href="https://github.com/mohammadnazarkhani" target="_blank">Mohammad Nazarkhani</a>
+                </p>
+            </footer>
         </main>
         <!-- Fotter section of webste contains contact us section and etc... -->
         <%- include('./partials/footer.ejs') %>
             <!-- Below is a button for moving page to top. -->
             <%- include('./partials/moveAboveBtn.ejs') %>
+                <script>
+                    // Automatically update the year in the footer
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                </script>
 </body>
 
 </html>

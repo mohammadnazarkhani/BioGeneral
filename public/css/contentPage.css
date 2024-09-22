@@ -1,0 +1,30 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+h2 {
+    color: var(--header-color);
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image>p {
+    text-align: center;
+}
