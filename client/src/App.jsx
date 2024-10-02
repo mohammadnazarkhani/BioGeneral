@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider
+}
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      App
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </div>
+  );
+};
 
-export default App
+export default App;
