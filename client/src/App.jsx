@@ -3,16 +3,19 @@ import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
-  RouterProvider
-}
+  RouterProvider,
+} from "react-router-dom";
 
 const App = () => {
-  return (
-    <div>
-      App
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={}>
+
+      </Route>
+    )
+  )
+  return <RouterProvider router={router}/>;
 };
 
 export default App;
