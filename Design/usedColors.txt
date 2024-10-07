@@ -1,0 +1,3 @@
+bold pink: #EE3CFB
+
+light pink: #FDDEFF
